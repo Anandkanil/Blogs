@@ -30,6 +30,7 @@ export default function AppContextProvider({children}){
 
     useEffect(()=>{
         fetchBlogPosts();
+         // eslint-disable-next-line
     },[])
 
     const values={

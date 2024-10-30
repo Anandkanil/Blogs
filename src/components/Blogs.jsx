@@ -2,15 +2,8 @@ import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 
 export default function Blogs() {
-  const { loading,
-    setLoading,
-    posts,
-    setPosts,
-    page,
-    setPage,
-    totalPages,
-    setTotalPages,
-    fetchBlogPosts}=useContext(AppContext);
+  const {
+    posts}=useContext(AppContext);
   return (
     <section className='w-full min-h-[90vh] my-[100px]'>
     <div className='flex flex-col gap-y-10 my-4' >
